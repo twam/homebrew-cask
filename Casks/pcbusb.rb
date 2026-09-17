@@ -13,7 +13,7 @@ cask 'pcbusb' do
   }
 
   uninstaller = "#{staged_path}/uninstaller.sh"
-  uninstall_preflight do
+  uninstall_preflight_steps do
     files = [
                "/usr/local/lib/libPCBUSB.dylib",
                "/usr/local/lib/libPCBUSB.#{version}.dylib",
